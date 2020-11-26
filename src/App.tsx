@@ -8,8 +8,9 @@ function App() {
   
 useEffect(()=> {
   async function fetchData(){
-    const questions = await getQuizDetails(10, 'easy');
+    const questions:Quiz[] = await getQuizDetails(10, 'easy');
 console.log(questions);
+setQuiz(questions)
   }
   fetchData();
 }, []);
