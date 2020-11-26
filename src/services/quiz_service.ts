@@ -9,7 +9,7 @@ const res = await fetch(`https://opentdb.com/api.php?amount=${totalQuetions}&dif
 
 let { results } =  await res.json();
 
-const quiz = results.map ((questionObj: Quiz) => {
+const quiz:Quiz[] = results.map ((questionObj: Quiz) => {
 return {
 question: questionObj.question,
 answer: questionObj.correct_answer,
