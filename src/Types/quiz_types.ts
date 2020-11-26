@@ -13,7 +13,7 @@ type: string
  export type QuestionType = {
  question: string
 answer: string
-Option: string[]
+option: string[]
 
 }
  export type questionPropsType = {

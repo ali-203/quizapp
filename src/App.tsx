@@ -16,13 +16,13 @@ setQuiz(questions)
   fetchData();
 }, []);
 
-if (!quiz.length)
+if(!quiz.length)
 return <h3>Loading.. </h3>
 
   return (
     <div className="App">
       <QuestionCard 
-      options={quiz[0].options}
+      options={quiz[0].option}
       question={quiz[0].question}
       />
     </div>
