@@ -16,3 +16,7 @@ answer: string
 Option: string[]
 
 }
+ export type questionPropsType = {
+    question: string
+    options: string[]
+} 

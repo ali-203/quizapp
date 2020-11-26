@@ -1,10 +1,6 @@
-import { type } from "os";
-import React from "react";
-type questionPropsType = {
-    question: string
-    options: string[]
-} 
 
+import React from "react";
+import {questionPropsType} from "./../Types/quiz_types"
 
 
 
